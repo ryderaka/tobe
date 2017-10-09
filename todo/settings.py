@@ -25,7 +25,7 @@ SECRET_KEY = 'ahk-7&4828l9z4#mhfdi07+zek0^)q=wv-jat6p)rclg!3&y1_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.9', '127.0.0.1', 'localhost']
 
 # REST_FRAMEWORK = {
 #     'DEFAULT_AUTHENTICATION_CLASSES': (

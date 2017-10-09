@@ -15,12 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from tobe.views import otp_generate, otp_verify, get_profile, new_profile
+from tobe.views import otp_generate, otp_verify, get_profile, new_profile, create_todo, accept_todo, dashboard
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^phone/', otp_generate),
     url(r'^otpverify/', otp_verify),
-    url(r'^getprofile/', get_profile),
-    url(r'^profile/', new_profile),
+    url(r'^register/', new_profile),
+    url(r'^profile/', get_profile),
+    url(r'^createtask/', create_todo),
+    url(r'^dashboard/', dashboard),
+    url(r'^accepttask/', accept_todo),
 ]
